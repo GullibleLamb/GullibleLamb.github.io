@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Authentication with Firebase</title>
+</head>
+
+<body>
+    <ion-app id="flex">
+        <ion-card color="primary" mode="ios">
+            <ion-card-header>
+                <ion-card-subtitle>Access AccTab</ion-card-subtitle>
+                <ion-card-title><span id="loginCTA">Log In</span> or <span id="signupCTA">Sign Up</span></ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+                <ion-input mode="ios" type="email" placeholder="Email" id="txtEmail" /></ion-input>
+                <ion-input mode="ios" type="password" placeholder="Password" id="txtPassword" /></ion-input>
+                <ion-input mode="ios" type="text" placeholder="First Name" id="txtFirstName" class="hide"></ion-input>
+                <ion-input mode="ios" type="text" placeholder="Last Name" id="txtLastName" class="hide"></ion-input>
+
+                <ion-button size="large" mode="ios" color="light" id="btnLogin">Log In</ion-button>
+                <ion-button size="large" mode="ios" color="dark" id="btnSignUp" class="hide">Sign Up</ion-button>
+                <ion-button size="large" mode="ios" color="medium" id="btnLogout" class="hide">Log Out</ion-button>
+            </ion-card-content>
+        </ion-card>
+    </ion-app>
+    <script src="script.js"></script>
+</body>
+
+</html>
